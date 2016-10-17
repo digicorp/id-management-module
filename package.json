@@ -3,7 +3,7 @@
   "license": "Apache-2.0",
   "main": "IdManagement.js",
   "description": "id-management-module is used to generate unique id(key) based on some rule.This rules are provided as a array of rules JSON.",
-  "version": "1.0.0",
+  "version": "3.0.2",
   "scripts": {
     "test": "yes"
   },
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ChandrakantThakkarDigiCorp/id-management-module/issues"
   },
-  "homepage": "https://github.com/ChandrakantThakkarDigiCorp/id-management-module#readme"
+  "homepage": "https://github.com/ChandrakantThakkarDigiCorp/id-management-module#readme",
+  "dependencies": {
+    "d3": "4.2.7"
+  }
 }

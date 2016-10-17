@@ -9,10 +9,10 @@ exports.generateID=function(rules,data){
         }else if((d["type"]).toLowerCase()=="dynamic"){
           idNumber=idNumber+data[d["value"]];
         }else if((d["type"]).toLowerCase()=="currdatetime"){
-          var currDate=d3.time.format(d["format"])(new Date());
+          var currDate=d3.timeFormat(d["format"])(new Date());
           idNumber=idNumber+currDate;
         }else if((d["type"]).toLowerCase()=="userdatetime"){
-          var currDate=d3.time.format(d["format"])(d["value"]);
+          var currDate=d3.timeFormat(d["format"])(new Date(d["value"]));
           idNumber=idNumber+currDate;
         }
 
